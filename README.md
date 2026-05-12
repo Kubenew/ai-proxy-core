@@ -1,9 +1,9 @@
 # ai-proxy-core
 
-[![PyPI version](https://img.shields.io/pypi/v/ai-proxy-core)](https://pypi.org/project/ai-proxy-core/)
-[![Python versions](https://img.shields.io/pypi/pyversions/ai-proxy-core)](https://pypi.org/project/ai-proxy-core/)
-[![License](https://img.shields.io/pypi/l/ai-proxy-core)](https://github.com/Kubenew/ai-proxy-core/blob/main/LICENSE)
-[![CI](https://github.com/Kubenew/ai-proxy-core/actions/workflows/ci.yml/badge.svg)](https://github.com/Kubenew/ai-proxy-core/actions/workflows/ci.yml)
+[![PyPI version](https://img.shields.io/pypi/v/kubenew-ai-proxy)](https://pypi.org/project/kubenew-ai-proxy/)
+[![Python versions](https://img.shields.io/pypi/pyversions/kubenew-ai-proxy)](https://pypi.org/project/kubenew-ai-proxy/)
+[![License](https://img.shields.io/pypi/l/kubenew-ai-proxy)](https://github.com/Kubenew/aiproxy/blob/main/LICENSE)
+[![CI](https://github.com/Kubenew/aiproxy/actions/workflows/ci.yml/badge.svg)](https://github.com/Kubenew/aiproxy/actions/workflows/ci.yml)
 
 **ai-proxy-core** is a Python reverse proxy that adds **AI-driven decision logic**
 for routing, anomaly detection, and adaptive traffic shaping.
