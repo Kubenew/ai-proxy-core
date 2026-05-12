@@ -23,6 +23,11 @@ class CircuitBreakerConfig(BaseModel):
 class AnomalyDetectionConfig(BaseModel):
     enabled: bool = True
     latency_zscore_threshold: float = 3.0
+    window_size: int = 50
+
+
+class ProxyConfig(BaseModel):
+    timeout_seconds: float = 30.0
 
 
 class MetricsConfig(BaseModel):
@@ -35,6 +40,7 @@ class AppConfig(BaseModel):
     backend_pool: BackendPoolConfig = Field(default_factory=BackendPoolConfig)
     circuit_breaker: CircuitBreakerConfig = Field(default_factory=CircuitBreakerConfig)
     anomaly_detection: AnomalyDetectionConfig = Field(default_factory=AnomalyDetectionConfig)
+    proxy: ProxyConfig = Field(default_factory=ProxyConfig)
     metrics: MetricsConfig = Field(default_factory=MetricsConfig)
 
 

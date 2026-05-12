@@ -14,6 +14,10 @@ circuit_breaker:
 anomaly_detection:
   enabled: true
   latency_zscore_threshold: 3.0
+  window_size: 50
+
+proxy:
+  timeout_seconds: 30.0
 
 metrics:
   enabled: true
