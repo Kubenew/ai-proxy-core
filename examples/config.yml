@@ -1,0 +1,20 @@
+listen: "0.0.0.0:9200"
+
+backend_pool:
+  balance: "adaptive"
+  servers:
+    - url: "http://localhost:5000"
+    - url: "http://localhost:5001"
+
+circuit_breaker:
+  enabled: true
+  error_threshold: 5
+  cooldown_seconds: 15
+
+anomaly_detection:
+  enabled: true
+  latency_zscore_threshold: 3.0
+
+metrics:
+  enabled: true
+  path: "/metrics"
